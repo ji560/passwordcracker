@@ -28,5 +28,5 @@ for entry in open("/home/jose/passwdlists/rockyou.txt") :
 			salts.remove(salts[i])
 			break
 		i += 1
-	if num_hashes == 0 :
+	if len(hashes) == 0 :
 		break
