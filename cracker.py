@@ -1,7 +1,6 @@
 #!/usr/bin/python
 import crypt
 import csv
-
 hashes = []
 salts = []
 with open('hash.txt') as csvfile:
@@ -15,7 +14,6 @@ with open('hash.txt') as csvfile:
 	somesalt = "$" + row[1]
 	somesalt += "$" + row[2]
 	salts.append(somesalt)
-num_hashes = len(hashes)
 for entry in open("/home/jose/passwdlists/rockyou.txt") :
 	entry = entry.rstrip("\n")
         i = 0
